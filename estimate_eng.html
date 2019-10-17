@@ -1,0 +1,224 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="lazypic">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" href="img/estimatecon.png">
+<link rel="apple-touch-icon" href="img/estimateicon.png">
+<title>Estimate</title>
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+<!-- Custom fonts for this template -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+<!-- Plugin CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet">
+<!-- Font -->
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+<link rel="stylesheet" type="text/css" href="css/estimate.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<body class="p-3">
+<div class="row text-center">
+    <div class="col-12 p-3">
+        <img src="http://75mm.studio/img/logo_v02.svg" width=250>
+    </div>
+    <div class="col-12 p-1">
+        Pre-Estimate System
+        <h6 id="date">Date:</h6>
+    </div>
+</div>
+
+
+<div class="container w-100">
+    <div class="row" id="document">
+        <!--Left-->
+        <div class="col-sm-8">
+            <h5 class="mt-3">
+                Client Information *
+            </h5>
+            
+            <div class="form-group row">
+                <div class="col-12 pb-1">
+                    <input class="form-control" type="text" value="" id="author" placeholder="Company name">
+                </div>
+                <div class="col-12 pb-1">
+                    <input class="form-control" type="email" value="" id="email" placeholder="Enter your email">
+                </div>
+                <div class="col-12 pb-2">
+                    <input class="form-control" type="text" value="" id="project" placeholder="Project Information">
+                </div>
+                <div class="col-12 pb-0">
+                    Project StartDate ~ EndDate
+                </div>
+                <div class="col-6 pb-1">
+                    <input class="form-control" type="date" value="YYYY-MM-DD" id="startdate" placeholder="YYYY-MM-DD">
+                </div>
+                <div class="col-6 pb-1">
+                    <input class="form-control" type="date" value="YYYY-MM-DD" id="enddate" placeholder="YYYY-MM-DD">
+                </div>
+                
+                
+            </div>
+            <div class="form-group row pl-4">
+                <div class="col-12">
+                    <input class="form-check-input" type="checkbox" id="privacy">
+                    <label class="form-check-label" for="privacy">
+                        Acquisition of personal information
+                    </label>
+                </div>
+                <div class="col-12">
+                    <a class="text-dark" href="https://75mm.studio/terms.html" target="_blank" rel="noopener noreferrer">Terms of service</a><br>
+                    <a class="text-dark" href="https://75mm.studio/privacy.html" target="_blank" rel="noopener noreferrer">Privacy policy</a>
+                </div>
+            </div>
+        
+            <h4 class="pt-2">Lens type</h4>
+            
+            <div class="form-check ml-3">
+                <input class="form-check-input" type="checkbox" name="lensType" id="mono" value=1.0 checked>
+                <label class="form-check-label" for="mono">
+                    Mono
+                </label>
+            </div>
+            
+            <div class="form-check ml-3">
+                <input class="form-check-input" type="checkbox" name="lensType" id="anamorphicLens" value=2.0>
+                <label class="form-check-label" for="anamorphicLens">
+                    Anamorphic <a href="https://youtu.be/qr5Mv12psrI" target="_blank" rel="noopener noreferrer" class="text-muted"><i class="fas fa-info-circle"></i></a>
+                </label>
+            </div>
+            <div class="form-check ml-3">
+                <input class="form-check-input" type="checkbox" name="lensType" id="stereo" value=3.0>
+                <label class="form-check-label" for="stereo">
+                    Stereo
+                </label>
+            </div>
+            <div class="form-check ml-3">
+                <input class="form-check-input" type="checkbox" name="projectType" id="vr" value=3.0>
+                <label class="form-check-label" for="vr">
+                    VR
+                </label>
+            </div>
+
+
+            <h4 class="pt-2">Service Detail</h4>
+            <div class="form-check ml-3">
+                <input class="form-check-input" type="checkbox" name="serviceDetail" id="is4kOver" value=2.0>
+                <label class="form-check-label" for="is4kOver">
+                    4K Over
+                </label>
+            </div>
+            <div class="form-check ml-3">
+                <input class="form-check-input" type="checkbox" name="serviceDetail" id="noneSurvey" value=2.0>
+                <label class="form-check-label" for="noneSurvey">
+                    None Survey( Laser Scan / Lidar )
+                </label>
+            </div>
+            <div class="form-check ml-3">
+                <input class="form-check-input" type="checkbox" name="serviceDetail" id="noneOnsetInfo" value=1.5>
+                <label class="form-check-label" for="noneOnsetInfo">
+                    None Onset Info
+                </label>
+            </div>
+            <h4 class="pt-4">Comment</h4>
+            <div class="form-group row">
+                <div class="col-12">
+                    <textarea class="form-control" rows="3" id="comment"></textarea>
+                </div>
+            </div>
+
+            <h4 class="pt-3">Shot number</h4>
+            <div class="form-group row">
+                <label for="example-number-input" class="col-7 col-form-label">
+                    Total Tracking Shot <a href="https://youtu.be/NAbSDHH59OQ" target="_blank" rel="noopener noreferrer" class="text-muted"><i class="fas fa-info-circle"></i></a></label>
+                <div class="col-5 pb-1">
+                <input class="form-control" type="text" id="totalShotNum" inputmode="numeric" placeholder="only number" value="1">
+                </div>
+                <label for="example-number-input" class="col-7 col-form-label">
+                    Object Tracking (Rigid) <a href="https://youtu.be/IlajHB5A4gc" target="_blank" rel="noopener noreferrer" class="text-muted"><i class="fas fa-info-circle"></i></a></label>
+                <div class="col-5 pb-1">
+                <input class="form-control" type="text" id="objectTrackingRigid" inputmode="numeric" placeholder="only number" value="0">
+                </div>
+                <label for="example-number-input" class="col-7 col-form-label">
+                    Object Tracking (NoneRigid)</label>
+                <div class="col-5 pb-1">
+                <input class="form-control" type="text" id="objectTrackingNoneRigid" inputmode="numeric" placeholder="only number" value="0">
+                </div>
+                <label for="example-number-input" class="col-7 col-form-label">
+                    Rotoanimation (Basic) <a href="https://youtu.be/FICJIL01lqk" target="_blank" rel="noopener noreferrer" class="text-muted"><i class="fas fa-info-circle"></i></a></label>
+                <div class="col-5 pb-1">
+                <input class="form-control" type="text" id="rotoanimationBasic" inputmode="numeric" placeholder="only number" value="0">
+                </div>
+                <label for="example-number-input" class="col-7 col-form-label">
+                    Rotoanimation (Soft Deform) <a href="https://youtu.be/BfPMAiZtsD0" target="_blank" rel="noopener noreferrer" class="text-muted"><i class="fas fa-info-circle"></i></a></label>
+                <div class="col-5 pb-1">
+                <input class="form-control" type="text" id="rotoanimationSoftDeform" inputmode="numeric" placeholder="only number" value="0">
+                </div>
+                <label for="example-number-input" class="col-7 col-form-label">
+                    Layout (Camera Extension) </label>
+                <div class="col-5 pb-1">
+                <input class="form-control" type="text" id="layout" inputmode="numeric" placeholder="only number" value="0">
+                </div>
+            </div>
+
+            <h4 class="pt-2">Frame</h4>
+            <div class="form-group row">
+                <label for="example-number-input" class="col-7 col-form-label">Total Frame number</label>
+                <div class="col-5">
+                <input class="form-control" type="text" id="frame" inputmode="numeric" placeholder="only number" value="1">
+                </div>
+            </div>
+            <div class="row pb-3">
+                <div class="col-5"></div>
+                <div class="col-7">
+                    <button id="addBucket" type="button" class="btn btn-dark btn-block">ADD BUCKET</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Bucket(Right)-->
+        <div class="col-sm-4">
+            <div>
+                <i class="fas fa-cart-arrow-down fa-3x m-3"></i>
+                <h4 id="numOfItem">Bucket: 0</h4>
+                <div id="bucket"></div>
+            </div>
+
+            <div class="pt-3 pb-3">
+                <h3 id="total">Total: $0</h3>
+            </div>
+            <div class="pt-3">
+                <button type="button" class="btn btn-dark btn-block" onclick="sendToEmail()"><i class="far fa-envelope"></i>&nbsp;&nbsp;&nbsp;Send to 75mm Studio</button>
+            </div>
+            <div class="pt-3 pb-3">
+                <button type="button" class="btn btn-dark btn-block" onclick="printMode()"><i class="fas fa-print"></i>&nbsp;&nbsp;&nbsp;Print this document</button>
+            </div>
+            <div class="pt-3 pb-3">
+                    <button type="button" class="btn btn-dark btn-block" onclick="resetForm()">Reset</button>
+                </div>
+            <div class="pt-3 pb-3 comment">
+                VAT included.<br>
+                <br>
+                Additional cost will be added to overseas large data transmission.<br>
+                <br>
+                Please contact us for On-set Supervising
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="p-3 text-center">
+    <div class="row">
+        <div class="col-12 text-center" id="copyright">
+          ⓒ 2019 75mm Studio Co., Ltd. All rights reserved.
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="js/estimate_eng.js"></script>
+</html>
