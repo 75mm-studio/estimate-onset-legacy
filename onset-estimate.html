@@ -27,7 +27,7 @@
         <img src="http://75mm.studio/img/logo_v02.svg" width=250>
     </div>
     <div class="col-12 p-1">
-        Pre-Estimate System
+        Onset-Estimate System
         <h6 id="date">Date:</h6>
     </div>
 </div>
@@ -42,16 +42,29 @@
             </h5>
             
             <div class="form-group row">
-                <div class="col-12 pb-1">
-                    <input class="form-control" type="text" value="" id="author" placeholder="Company name">
-                </div>
-                <div class="col-12 pb-1">
-                    <input class="form-control" type="email" value="" id="email" placeholder="Enter your email">
-                </div>
-                <div class="col-12 pb-2">
-                    <input class="form-control" type="text" value="" id="project" placeholder="Project Information">
-                </div>
-                <div class="col-12 pb-0">
+                    <div class="col-12 pb-1">
+                        <input class="form-control" type="text" value="" id="author" placeholder="Company name">
+                    </div>
+                    <div class="col-12 pb-1">
+                        <input class="form-control" type="email" value="" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="col-12 pb-2">
+                        <input class="form-control" type="text" value="" id="project" placeholder="Project Information">
+                    </div>
+                    <div class="col-12 pb-0">
+                      Location Information
+                    </div>
+                    <div class="col-8 pb-1">
+                      <input class="form-control" type="text" value="" id="url" placeholder="Google Map URL">
+                    </div>
+                    <div class="col-4 pb-1">
+                        <input class="form-check-input" type="checkbox" id="domestic" placeholder="domestic">
+                        <lable class="form-check-label" for="domestic">Not Korea</lable>
+                    </div>
+                    <div class="col-12 pb-1">
+                      <textarea class="form-control" rows="5" type="text" value="" id="description" placeholder="Description"></textarea>
+                    </div>
+                    <div class="col-12 pb-0">
                     프로젝트 예상기간 ( StartDate ~ EndDate )
                 </div>
                 <div class="col-6 pb-1">
@@ -76,54 +89,27 @@
                 </div>
             </div>
         
-            <h4 class="pt-2">Lens type</h4>
-            
-            <div class="form-check ml-3">
-                <input class="form-check-input" type="checkbox" name="lensType" id="mono" value=1.0 checked>
-                <label class="form-check-label" for="mono">
-                    Mono
-                </label>
+            <h4 class="pt-2">Service Model</h4>
+            <div class="row">
+                <div class = "col-6">
+                    <div class="form-check ml-3">
+                        <input class="form-check-input" type="radio" name="serviceModel" id="lidar" value=1.0 checked>
+                        <label class="form-check-label" for="lidar">
+                            Lidar Scan
+                        </label>
+                    </div>
+                </div>
+                <div class = "col-6">
+                    <div class="form-check ml-3">
+                        <input class="form-check-input" type="radio" name="serviceModel" id="lidarTexture" value=2.0>
+                        <label class="form-check-label" for="lidartexture">
+                        Lidar Scan + Texture
+                        </label>
+                    </div>
+                </div>
             </div>
             
-            <div class="form-check ml-3">
-                <input class="form-check-input" type="checkbox" name="lensType" id="anamorphicLens" value=2.0>
-                <label class="form-check-label" for="anamorphicLens">
-                    Anamorphic <a href="https://youtu.be/qr5Mv12psrI" target="_blank" rel="noopener noreferrer" class="text-muted"><i class="fas fa-info-circle"></i></a>
-                </label>
-            </div>
-            <div class="form-check ml-3">
-                <input class="form-check-input" type="checkbox" name="lensType" id="stereo" value=3.0>
-                <label class="form-check-label" for="stereo">
-                    Stereo
-                </label>
-            </div>
-            <div class="form-check ml-3">
-                <input class="form-check-input" type="checkbox" name="projectType" id="vr" value=3.0>
-                <label class="form-check-label" for="vr">
-                    VR
-                </label>
-            </div>
-
-
-            <h4 class="pt-2">Service Detail</h4>
-            <div class="form-check ml-3">
-                <input class="form-check-input" type="checkbox" name="serviceDetail" id="is4kOver" value=2.0>
-                <label class="form-check-label" for="is4kOver">
-                    4K Over
-                </label>
-            </div>
-            <div class="form-check ml-3">
-                <input class="form-check-input" type="checkbox" name="serviceDetail" id="noneSurvey" value=2.0>
-                <label class="form-check-label" for="noneSurvey">
-                    None Survey( Laser Scan / Lidar )
-                </label>
-            </div>
-            <div class="form-check ml-3">
-                <input class="form-check-input" type="checkbox" name="serviceDetail" id="noneOnsetInfo" value=1.5>
-                <label class="form-check-label" for="noneOnsetInfo">
-                    None Onset Info
-                </label>
-            </div>
+        
             <h4 class="pt-4">Comment</h4>
             <div class="form-group row">
                 <div class="col-12">
@@ -131,47 +117,20 @@
                 </div>
             </div>
 
-            <h4 class="pt-3">Shot number</h4>
+            <h4 class="pt-3">Additional Info</h4>
             <div class="form-group row">
                 <label for="example-number-input" class="col-7 col-form-label">
-                    Total Tracking Shot <a href="https://youtu.be/NAbSDHH59OQ" target="_blank" rel="noopener noreferrer" class="text-muted"><i class="fas fa-info-circle"></i></a></label>
+                    Total Spots </label>
                 <div class="col-5 pb-1">
                 <input class="form-control" type="text" id="totalShotNum" inputmode="numeric" placeholder="only number" value="1">
                 </div>
                 <label for="example-number-input" class="col-7 col-form-label">
-                    Object Tracking (Rigid) <a href="https://youtu.be/IlajHB5A4gc" target="_blank" rel="noopener noreferrer" class="text-muted"><i class="fas fa-info-circle"></i></a></label>
+                    Total dates </label>
                 <div class="col-5 pb-1">
-                <input class="form-control" type="text" id="objectTrackingRigid" inputmode="numeric" placeholder="only number" value="0">
-                </div>
-                <label for="example-number-input" class="col-7 col-form-label">
-                    Object Tracking (NoneRigid)</label>
-                <div class="col-5 pb-1">
-                <input class="form-control" type="text" id="objectTrackingNoneRigid" inputmode="numeric" placeholder="only number" value="0">
-                </div>
-                <label for="example-number-input" class="col-7 col-form-label">
-                    Rotoanimation (Basic) <a href="https://youtu.be/FICJIL01lqk" target="_blank" rel="noopener noreferrer" class="text-muted"><i class="fas fa-info-circle"></i></a></label>
-                <div class="col-5 pb-1">
-                <input class="form-control" type="text" id="rotoanimationBasic" inputmode="numeric" placeholder="only number" value="0">
-                </div>
-                <label for="example-number-input" class="col-7 col-form-label">
-                    Rotoanimation (Soft Deform) <a href="https://youtu.be/BfPMAiZtsD0" target="_blank" rel="noopener noreferrer" class="text-muted"><i class="fas fa-info-circle"></i></a></label>
-                <div class="col-5 pb-1">
-                <input class="form-control" type="text" id="rotoanimationSoftDeform" inputmode="numeric" placeholder="only number" value="0">
-                </div>
-                <label for="example-number-input" class="col-7 col-form-label">
-                    Layout (Camera Extension) </label>
-                <div class="col-5 pb-1">
-                <input class="form-control" type="text" id="layout" inputmode="numeric" placeholder="only number" value="0">
+                <input class="form-control" type="text" id="totalShotNum" inputmode="numeric" placeholder="only number" value="1">
                 </div>
             </div>
 
-            <h4 class="pt-2">Frame</h4>
-            <div class="form-group row">
-                <label for="example-number-input" class="col-7 col-form-label">Total Frame number</label>
-                <div class="col-5">
-                <input class="form-control" type="text" id="frame" inputmode="numeric" placeholder="only number" value="1">
-                </div>
-            </div>
             <div class="row pb-3">
                 <div class="col-5"></div>
                 <div class="col-7">
@@ -201,7 +160,7 @@
                     <button type="button" class="btn btn-dark btn-block" onclick="resetForm()">Reset</button>
                 </div>
             <div class="pt-3 pb-3 comment">
-                VAT 별도 (VAT not included)<br>
+                VAT 별도 (VAT is not included)<br>
                 <br>
                 해외로 대용량 데이터 전송시 비용 추가<br>
                 (Additional cost for big data transmission to overseas)<br>
