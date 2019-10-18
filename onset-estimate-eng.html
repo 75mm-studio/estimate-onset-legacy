@@ -18,7 +18,7 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet">
 <!-- Font -->
 <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
-<link rel="stylesheet" type="text/css" href="css/estimate.css">
+<link rel="stylesheet" type="text/css" href="css/onset-estimate.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 </head>
 <body class="p-3">
@@ -52,7 +52,7 @@
                     <input class="form-control" type="text" value="" id="project" placeholder="Project Information">
                 </div>
                 <div class="col-12 pb-0">
-                    프로젝트 예상기간
+                    Project StartDate ~ EndDate
                 </div>
                 <div class="col-6 pb-1">
                     <input class="form-control" type="date" value="YYYY-MM-DD" id="startdate" placeholder="YYYY-MM-DD">
@@ -67,12 +67,12 @@
                 <div class="col-12">
                     <input class="form-check-input" type="checkbox" id="privacy">
                     <label class="form-check-label" for="privacy">
-                        개인정보 수집 동의
+                        Acquisition of personal information
                     </label>
                 </div>
                 <div class="col-12">
-                    <a class="text-dark" href="https://75mm.studio/terms.html" target="_blank" rel="noopener noreferrer">서비스 이용약관</a><br>
-                    <a class="text-dark" href="https://75mm.studio/privacy.html" target="_blank" rel="noopener noreferrer">개인정보 처리방침</a>
+                    <a class="text-dark" href="https://75mm.studio/terms.html" target="_blank" rel="noopener noreferrer">Terms of service</a><br>
+                    <a class="text-dark" href="https://75mm.studio/privacy.html" target="_blank" rel="noopener noreferrer">Privacy policy</a>
                 </div>
             </div>
         
@@ -189,7 +189,7 @@
             </div>
 
             <div class="pt-3 pb-3">
-                <h3 id="total">Total: ￦0</h3>
+                <h3 id="total">Total: $0</h3>
             </div>
             <div class="pt-3">
                 <button type="button" class="btn btn-dark btn-block" onclick="sendToEmail()"><i class="far fa-envelope"></i>&nbsp;&nbsp;&nbsp;Send to 75mm Studio</button>
@@ -201,11 +201,11 @@
                     <button type="button" class="btn btn-dark btn-block" onclick="resetForm()">Reset</button>
                 </div>
             <div class="pt-3 pb-3 comment">
-                VAT 별도<br>
+                VAT included.<br>
                 <br>
-                해외로 대용량 데이터 전송시 비용 추가<br>
+                Additional cost will be added to overseas large data transmission.<br>
                 <br>
-                On-set Supervising 별도문의<br>
+                Please contact us for On-set Supervising
             </div>
         </div>
     </div>
@@ -220,5 +220,5 @@
 </div>
 
 </body>
-<script src="js/estimate_kor.js"></script>
+<script src="js/onset-estimate-eng.js"></script>
 </html>
